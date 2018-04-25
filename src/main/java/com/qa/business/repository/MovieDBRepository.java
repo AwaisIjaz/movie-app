@@ -24,7 +24,6 @@ public class MovieDBRepository implements IMovieRepository {
 	
 	@Override
 	public String getAllMovies() {
-		
 		LOGGER.info("MovieDBRepository getAllMovies");
 		Query query = manager.createQuery("Select m FROM Movie m");
 		Collection<Movie> movies = (Collection<Movie>) query.getResultList();

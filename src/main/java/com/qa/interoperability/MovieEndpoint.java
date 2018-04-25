@@ -12,8 +12,6 @@ import com.qa.business.service.MovieService;
 @Path("/movie")
 public class MovieEndpoint {
 
-	
-
 	@Inject
 	private IMovieService service;
 
