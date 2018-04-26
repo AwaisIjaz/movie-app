@@ -56,14 +56,7 @@ public class MovieDBRepository implements IMovieRepository {
 		return "{\"message\":\"movie created\"}";
 	}
 
-	@Override
-	@Transactional(REQUIRED)
-	public String deleteMovie(String movieJSON) {
-		Movie aMovie = util.getObjectForJSON(movieJSON, Movie.class);
-		manager.remove(aMovie);
-		return "{\"message\":\"movie deleted\"}";
-		
-	}
+	
 
 
 	}

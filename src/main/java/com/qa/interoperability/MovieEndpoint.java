@@ -39,10 +39,6 @@ public class MovieEndpoint {
 		return service.createMovie(jsonString);
 	}
 	
-	@Path("/json/")
-	@POST
-	@Produces({ "application/json" })
-	public String deleteMovie(String jsonString) {
-		return service.createMovie(jsonString);
+	
 	}
-}
+
